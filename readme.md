@@ -65,3 +65,4 @@ $ gcloud run deploy --image gcr.io/[project-id-kalian]/C23PS423_CC --platform ma
 
 ## Demo FastAPI Models 
 Untuk mencoba demo model diatas bisa buka link tersebut : https://rekomendasi-uctmtl3fka-et.a.run.app/docs
+Contoh input bisa menggunakan UserId : A3SGXH7AUHU8GW
