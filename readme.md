@@ -64,7 +64,5 @@ $ gcloud run deploy --image gcr.io/[your-project-id]/C23PS423_CC --platform mana
 13. After the deployment process is complete, GCP will provide a URL that can be used to access the deployed FastAPI application. Copy that URL from the output and try accessing it in a web browser or using an API testing tool like Postman.
 
 ## Demo of FastAPI Models
-To try the demo of the above model, you can open the following link: https://rekomendasi-
-
-uctmtl3fka-et.a.run.app/docs
+To try the demo of the above model, you can open the following link: https://rekomendasi-uctmtl3fka-et.a.run.app/docs
 You can use the example input with UserId: A3SGXH7AUHU8GW
