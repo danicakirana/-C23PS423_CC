@@ -22,18 +22,18 @@ model = tf.keras.models.load_model('./recommender_model.h5')
 datas = db.reference('/dataa').get()
 df = pd.DataFrame.from_dict(datas)
 
-#buat basemodel untuk post
+#making basemodel for post input
 class DataInput(BaseModel):
     data: str
 
-#import model h5 disini, sebagai contoh inputan model linear
+#import machine learning model
 model = tf.keras.models.load_model('./recommender_model.h5')
 
 @app.get("/")
 def hello():
     return {"message": "MODEL API"}
 
-#contoh untuk get model predict
+#example for get model predict
 @app.get("/predict")
 def predict():
     data = 'A3SGXH7AUHU8GW'
