@@ -22,8 +22,8 @@ $ uvicorn main:app --reload
 ```
 $ gcloud init
 $ gcloud services enable run.googleapis.com
-$ gcloud builds submit --tag gcr.io/[project-id-kalian]/fastapi-model-deployment
-$ gcloud run deploy --image gcr.io/[project-id-kalian]/fastapi-model-deployment --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml
+$ gcloud builds submit --tag gcr.io/[project-id-kalian]/C23PS423_CC
+$ gcloud run deploy --image gcr.io/[project-id-kalian]/C23PS423_CC --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml
 ```
 
 ## Cara deploy ke cloud-run menggunakan Google Cloud Platform 
@@ -38,7 +38,7 @@ $ gcloud run deploy --image gcr.io/[project-id-kalian]/fastapi-model-deployment 
 4. Buka terminal atau command prompt, lalu arahkan ke direktori tempat Anda ingin mengklon repository FastAPI.
 
 5. Klone repository FastAPI dengan menjalankan perintah berikut:
-   ` git clone https://github.com/fikrimln16/fastAPI-cloudrun-models-deployment `
+   ` git clone https://github.com/danicakirana/C23PS423_CC `
  
  6. Setelah proses pengklonan selesai, arahkan terminal atau command prompt ke direktori FastAPI yang baru saja dikloning.
  
@@ -64,4 +64,4 @@ $ gcloud run deploy --image gcr.io/[project-id-kalian]/fastapi-model-deployment 
 13. Setelah proses deploy selesai, GCP akan memberikan URL yang dapat digunakan untuk mengakses aplikasi FastAPI yang dideploy. Salin URL tersebut dari output dan coba akses di web browser atau dengan menggunakan      perangkat lunak pengujian API seperti Postman.
 
 ## Demo FastAPI Models 
-Untuk mencoba demo model diatas bisa buka link tersebut : https://fastapi-model-deployment-dl6yh3mkfa-et.a.run.app/docs
+Untuk mencoba demo model diatas bisa buka link tersebut : https://rekomendasi-uctmtl3fka-et.a.run.app/docs
