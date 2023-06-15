@@ -123,7 +123,7 @@ def predict():
     return response
 
 
-#contoh untuk post model predict
+#post model predict
 @app.post("/predict")
 def predict(data: DataInput):
     data = data.data
