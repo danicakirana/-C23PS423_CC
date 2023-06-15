@@ -1,16 +1,16 @@
-# Deploy FastAPI dengan menggunakan Cloud Run
-Deploy FastAPI Machine Learning model dengan menggunakan CloudRun
+# Deploy FastAPI using Cloud Run
+Deploy the FastAPI Machine Learning model using Cloud Run
 
 
-## Kebutuhan
+## Requirements
 * Pyenv (optional)
 * Virtualenv (optional)
 * Python 3.9
 * Google Cloud Platform Account
-* Google Cloud Platform - API Cloud Build
+* Google Cloud Platform - Cloud Build API
 
 
-## Jalankan secara lokal
+## Running Locally
 ```
 $ virtualenv -p python3.8.2 .venv
 $ source .venv/bin/activate
@@ -18,51 +18,53 @@ $ pip install -r requirements.txt
 $ uvicorn main:app --reload
 ```
 
-## Cara deploy ke cloud-run menggunakan cloud SDK
+## Deploying to Cloud Run using Cloud SDK
 ```
 $ gcloud init
 $ gcloud services enable run.googleapis.com
-$ gcloud builds submit --tag gcr.io/[project-id-kalian]/C23PS423_CC
-$ gcloud run deploy --image gcr.io/[project-id-kalian]/C23PS423_CC --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml
+$ gcloud builds submit --tag gcr.io/[your-project-id]/C23PS423_CC
+$ gcloud run deploy --image gcr.io/[your-project-id]/C23PS423_CC --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml
 ```
 
-## Cara deploy ke cloud-run menggunakan Google Cloud Platform 
+## Deploying to Cloud Run using Google Cloud Platform
 
-1. Pastikan Anda memiliki akun Google Cloud Platform (GCP) yang aktif. Jika belum, daftar dan buat proyek baru di https://console.cloud.google.com.
+1. Make sure you have an active Google Cloud Platform (GCP) account. If not, sign up and create a new project at https://console.cloud.google.com.
 
-2. Pastikan Anda telah menginstal Google Cloud SDK (https://cloud.google.com/sdk) dan menginisialisasi dengan menjalankan perintah berikut di terminal atau command prompt:
+2. Ensure you have installed the Google Cloud SDK (https://cloud.google.com/sdk) and initialized it by running the following command in the terminal or command prompt:
    ``` gcloud init ```
- 
-3. Buatlah repository di layanan pengelolaan kode seperti GitHub atau GitLab, dan pastikan repository tersebut berisi semua file yang diperlukan untuk aplikasi FastAPI, termasuk Dockerfile, requirements.txt, dan kode aplikasi FastAPI Anda.
 
-4. Buka terminal atau command prompt, lalu arahkan ke direktori tempat Anda ingin mengklon repository FastAPI.
+3. Create a repository on a code management service like GitHub or GitLab, and make sure the repository contains all the necessary files for your FastAPI application, including Dockerfile, requirements.txt, and your FastAPI application code.
 
-5. Klone repository FastAPI dengan menjalankan perintah berikut:
+4. Open a terminal or command prompt and navigate to the directory where you want to clone the FastAPI repository.
+
+5. Clone the FastAPI repository by running the following command:
    ` git clone https://github.com/danicakirana/C23PS423_CC `
- 
- 6. Setelah proses pengklonan selesai, arahkan terminal atau command prompt ke direktori FastAPI yang baru saja dikloning.
- 
- 7. Build container Docker lokal dengan menjalankan perintah berikut:
+
+6. After the cloning process is complete, navigate your terminal or command prompt to the newly cloned FastAPI directory.
+
+7. Build the local Docker container by running the following command:
    ` docker build -t gcr.io/[PROJECT_ID]/fastapi-app . `
-    Ganti [PROJECT_ID] dengan ID proyek Google Cloud Platform yang telah Anda tentukan sebelumnya.
-    
- 8. Setelah proses pembangunan selesai, verifikasi bahwa kontainer Docker lokal berjalan dengan menjalankan perintah berikut:
-    ` docker run -p 8080:8080 gcr.io/[PROJECT_ID]/fastapi-app `
-    Pastikan tidak ada kesalahan dan aplikasi FastAPI berjalan dengan baik di localhost.
+   Replace [PROJECT_ID] with your designated Google Cloud Platform project ID.
 
-9. Jika langkah sebelumnya berhasil, berhenti dan hapus kontainer Docker yang berjalan dengan menekan Ctrl+C di terminal atau command prompt.
+8. Once the building process is complete, verify that the local Docker container is running by executing the following command:
+   ` docker run -p 8080:8080 gcr.io/[PROJECT_ID]/fastapi-app `
+   Make sure there are no errors and that the FastAPI application runs properly on localhost.
 
-10. Untuk menerbitkan kontainer Docker ke Google Cloud Container Registry, jalankan perintah berikut:
+9. If the previous step is successful, stop and remove the running Docker container by pressing Ctrl+C in the terminal or command prompt.
+
+10. To publish the Docker container to the Google Cloud Container Registry, execute the following command:
     ` docker push gcr.io/[PROJECT_ID]/fastapi-app `
-    Kontainer akan diunggah ke Container Registry di proyek Google Cloud Platform yang sesuai.
-    
-11. Selanjutnya, buat layanan Cloud Run dengan menjalankan perintah berikut pada asia-southeast2(jakarta): 
+    The container will be uploaded to the Container Registry in the corresponding Google Cloud Platform project.
+
+11. Next, create a Cloud Run service by running the following command in asia-southeast2 (Jakarta):
     ` gcloud run deploy --image gcr.io/[PROJECT_ID]/fastapi-model-deployment --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml `
- 
-12. GCP akan meminta Anda untuk memilih wilayah (region) untuk mendeploy layanan Cloud Run. Pilih wilayah yang sesuai dengan kebutuhan Anda.
 
-13. Setelah proses deploy selesai, GCP akan memberikan URL yang dapat digunakan untuk mengakses aplikasi FastAPI yang dideploy. Salin URL tersebut dari output dan coba akses di web browser atau dengan menggunakan      perangkat lunak pengujian API seperti Postman.
+12. GCP will prompt you to choose a region to deploy the Cloud Run service. Select the region that suits your needs.
 
-## Demo FastAPI Models 
-Untuk mencoba demo model diatas bisa buka link tersebut : https://rekomendasi-uctmtl3fka-et.a.run.app/docs
-Contoh input bisa menggunakan UserId : A3SGXH7AUHU8GW
+13. After the deployment process is complete, GCP will provide a URL that can be used to access the deployed FastAPI application. Copy that URL from the output and try accessing it in a web browser or using an API testing tool like Postman.
+
+## Demo of FastAPI Models
+To try the demo of the above model, you can open the following link: https://rekomendasi-
+
+uctmtl3fka-et.a.run.app/docs
+You can use the example input with UserId: A3SGXH7AUHU8GW
