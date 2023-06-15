@@ -17,8 +17,7 @@ firebase_admin.initialize_app(cred, {
 
 #import model h5 disini, sebagai contoh inputan model linear
 model = tf.keras.models.load_model('./recommender_model.h5')
-#Import the data set
-#df = pd.read_csv('./Reviews3.csv')
+
 #read data
 datas = db.reference('/dataa').get()
 df = pd.DataFrame.from_dict(datas)
