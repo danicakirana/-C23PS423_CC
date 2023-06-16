@@ -22,8 +22,8 @@ $ uvicorn main:app --reload
 ```
 $ gcloud init
 $ gcloud services enable run.googleapis.com
-$ gcloud builds submit --tag gcr.io/[your-project-id]/C23PS423_CC
-$ gcloud run deploy --image gcr.io/[your-project-id]/C23PS423_CC --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml
+$ gcloud builds submit --tag gcr.io/[your-project-id]/[your-folder]
+$ gcloud run deploy --image gcr.io/[your-project-id]/[image] --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml
 ```
 
 ## Deploying to Cloud Run using Google Cloud Platform
@@ -43,21 +43,21 @@ $ gcloud run deploy --image gcr.io/[your-project-id]/C23PS423_CC --platform mana
 6. After the cloning process is complete, navigate your terminal or command prompt to the newly cloned FastAPI directory.
 
 7. Build the local Docker container by running the following command:
-   ` docker build -t gcr.io/[PROJECT_ID]/fastapi-app . `
+   ` docker build -t gcr.io/[PROJECT_ID]/[your-folder] . `
    Replace [PROJECT_ID] with your designated Google Cloud Platform project ID.
 
 8. Once the building process is complete, verify that the local Docker container is running by executing the following command:
-   ` docker run -p 8080:8080 gcr.io/[PROJECT_ID]/fastapi-app `
+   ` docker run -p 8080:8080 gcr.io/[PROJECT_ID]/[your-folder] `
    Make sure there are no errors and that the FastAPI application runs properly on localhost.
 
 9. If the previous step is successful, stop and remove the running Docker container by pressing Ctrl+C in the terminal or command prompt.
 
 10. To publish the Docker container to the Google Cloud Container Registry, execute the following command:
-    ` docker push gcr.io/[PROJECT_ID]/fastapi-app `
+    ` docker push gcr.io/[PROJECT_ID]/[your-folder] `
     The container will be uploaded to the Container Registry in the corresponding Google Cloud Platform project.
 
 11. Next, create a Cloud Run service by running the following command in asia-southeast2 (Jakarta):
-    ` gcloud run deploy --image gcr.io/[PROJECT_ID]/fastapi-model-deployment --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml `
+    ` gcloud run deploy --image gcr.io/[PROJECT_ID]/[service-name] --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml `
 
 12. GCP will prompt you to choose a region to deploy the Cloud Run service. Select the region that suits your needs.
 
