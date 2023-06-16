@@ -1,4 +1,117 @@
 {
+  "datahistory": {
+    "EsHQjIZepkhvg3Dnrn7I9AxdLsI3": {
+      "-NY2-W52DzS6GD-XGdJh": {
+        "date": "Fri Jun 16 14:01:13 GMT+07:00 2023",
+        "productId": "B001E4KFG0",
+        "totalCalories": "760"
+      },
+      "-NY2-aOAd2KTJNRUwfS1": {
+        "date": "Fri Jun 16 14:01:34 GMT+07:00 2023",
+        "productId": "B000UA0QIQ",
+        "totalCalories": "810"
+      },
+      "-NY20s6crR8-A1cehfAw": {
+        "date": "Fri Jun 16 14:07:09 GMT+07:00 2023",
+        "productId": "B00813GRG4",
+        "totalCalories": "65"
+      },
+      "-NY22hBEYAzeREQ39SQV": {
+        "date": "Fri Jun 16 14:15:08 GMT+07:00 2023",
+        "productId": "B001E4KFG0",
+        "totalCalories": "76"
+      },
+      "-NY22m7e_0tQo0AgP70O": {
+        "date": "Fri Jun 16 14:15:29 GMT+07:00 2023",
+        "productId": "B006K2ZZ7K",
+        "totalCalories": "89"
+      },
+      "-NY28KkjH7oz2lhAx4-A": {
+        "date": "Fri Jun 16 14:39:45 GMT+07:00 2023",
+        "productId": "B001E4KFG0",
+        "totalCalories": "76"
+      },
+      "-NY2BQ91Tch0fIQRAjz-": {
+        "date": "Fri Jun 16 14:53:14 GMT+07:00 2023",
+        "productId": "B006SQBRMA",
+        "totalCalories": "460"
+      }
+    },
+    "JMnDUym3MwbDEU8lI3JvHaISVO53": {
+      "-NY0_2he_IL4LQTA7Y8a": {
+        "date": "Fri Jun 16 07:21:36 GMT+07:00 2023",
+        "productId": "B001E4KFG0",
+        "totalCalories": "760"
+      },
+      "-NY0cWClfVvHdLn-fAjn": {
+        "date": "Fri Jun 16 07:36:44 GMT+07:00 2023",
+        "productId": "B000LQOCH0",
+        "totalCalories": "744"
+      }
+    },
+    "M0Lyj2rSGDdrsiBjGQKJYVIZCvo1": {
+      "-NY2V1dy_vp4AKcgCGJJ": {
+        "date": "Fri Jun 16 16:18:57 GMT+07:00 2023",
+        "productId": "B001E4KFG0",
+        "totalCalories": "152"
+      },
+      "-NY2V3jmfwJKHw-STjmL": {
+        "date": "Fri Jun 16 16:19:06 GMT+07:00 2023",
+        "productId": "B00813GRG4",
+        "totalCalories": "195"
+      },
+      "-NY2VInQVDNgS3nGnW_3": {
+        "date": "Fri Jun 16 16:20:07 GMT+07:00 2023",
+        "productId": "B000E7L2R4",
+        "totalCalories": "183"
+      },
+      "-NY2VlwwqN5Z0TI4FhYm": {
+        "date": "Fri Jun 16 16:22:11 GMT+07:00 2023",
+        "productId": "B001E4KFG0",
+        "totalCalories": "304"
+      },
+      "-NY2VtM7MS7wuJ_kJB-b": {
+        "date": "Fri Jun 16 16:22:41 GMT+07:00 2023",
+        "productId": "B00813GRG4",
+        "totalCalories": "3250"
+      },
+      "-NY2gaBqfVSYHdg7HApi": {
+        "date": "Fri Jun 16 17:13:48 GMT+07:00 2023",
+        "productId": "B00813GRG4",
+        "totalCalories": "1300"
+      }
+    },
+    "UTcsi6jv3Ocgp10KtrUVCFskI9T2": {
+      "-NY1tIB75__TRRptc8KU": {
+        "date": "Fri Jun 16 13:29:40 GMT+07:00 2023",
+        "productId": "B00813GRG4",
+        "totalCalories": "650"
+      },
+      "-NY1tT5jJ9s8M-4wB9gY": {
+        "date": "Fri Jun 16 13:30:25 GMT+07:00 2023",
+        "productId": "B001E4KFG0",
+        "totalCalories": "760"
+      }
+    },
+    "historykey": 12323232,
+    "paLOGJTnECMLE2UPwcyIMniYCOE2": {
+      "-NY2Ozx5Xvlf1m30u7K6": {
+        "date": "Fri Jun 16 15:52:32 GMT+07:00 2023",
+        "productId": "B00171APVA",
+        "totalCalories": "145"
+      },
+      "-NY2P2l6AV_cEfi0WpY5": {
+        "date": "Fri Jun 16 15:52:48 GMT+07:00 2023",
+        "productId": "B006SQBRMA",
+        "totalCalories": "92"
+      },
+      "-NY2P5GYCWgnXg42wY-Y": {
+        "date": "Fri Jun 16 15:52:58 GMT+07:00 2023",
+        "productId": "B003OB0IB8",
+        "totalCalories": "1263"
+      }
+    }
+  },
   "datakalori": [
     {
       "Cals_per100grams": "76 cal",
