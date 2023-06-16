@@ -2,10 +2,10 @@
 Deploy the FastAPI Machine Learning model using Cloud Run
 
 ## Contributor
-|            Name          |  Bangkit ID  |       Path       |
-|:------------------------:|:------------:|:----------------:|
-|  Danica Kirana           |  C306DSY0893 | Cloud Computing  |
-|  Jeremy Kevin A. S.      |  C306DSX1475 | Cloud Computing  |
+|            Name                  |  Bangkit ID  |       Path       |    Github      |
+|:--------------------------------:|:------------:|:----------------:|:---------------:
+|  Danica Kirana                   |  C306DSY0893 | Cloud Computing  |  danicakirana  |
+|  Jeremy Kevin Alexandro Sitorus  |  C306DSX1475 | Cloud Computing  |  BelajarCuan   |
 
 ## Requirements
 * Pyenv (optional)
