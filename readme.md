@@ -14,7 +14,7 @@ Deploy the FastAPI Machine Learning model using Cloud Run
 ```
 $ virtualenv -p python3.8.2 .venv
 $ source .venv/bin/activate
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt
 $ uvicorn main:app --reload
 ```
 
@@ -23,7 +23,7 @@ $ uvicorn main:app --reload
 $ gcloud init
 $ gcloud services enable run.googleapis.com
 $ gcloud builds submit --tag gcr.io/[your-project-id]/[your-folder]
-$ gcloud run deploy --image gcr.io/[your-project-id]/[image] --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml
+After that, create service using Google Clod Console
 ```
 
 ## Deploying to Cloud Run using Google Cloud Platform
@@ -56,12 +56,9 @@ $ gcloud run deploy --image gcr.io/[your-project-id]/[image] --platform managed 
     ` docker push gcr.io/[PROJECT_ID]/[your-folder] `
     The container will be uploaded to the Container Registry in the corresponding Google Cloud Platform project.
 
-11. Next, create a Cloud Run service by running the following command in asia-southeast2 (Jakarta):
-    ` gcloud run deploy --image gcr.io/[PROJECT_ID]/[service-name] --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml `
+11. Next, create a Cloud Run service in Google Cloud console.
 
-12. GCP will prompt you to choose a region to deploy the Cloud Run service. Select the region that suits your needs.
-
-13. After the deployment process is complete, GCP will provide a URL that can be used to access the deployed FastAPI application. Copy that URL from the output and try accessing it in a web browser or using an API testing tool like Postman.
+12. After the deployment process is complete, GCP will provide a URL that can be used to access the deployed FastAPI application. Copy that URL from the output and try accessing it in a web browser or using an API testing tool like Postman.
 
 ## Demo of FastAPI Models
 To try the demo of the above model, you can open the following link: https://rekomendasi-uctmtl3fka-et.a.run.app/docs
